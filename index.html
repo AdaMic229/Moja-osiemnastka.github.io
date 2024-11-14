@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sekcja z filmem i przyciskiem Skip -->
+    <div id="video-container">
+        <video id="intro-video" autoplay muted>
+            <source src="filmik.mp4" type="video/mp4">
+            Twoja przeglądarka nie wspiera tagu video.
+        </video>
+        <button id="skip-button" onclick="skipIntro()">Skip</button>
+    </div>
+
+    <!-- Główna treść strony, widoczna po kliknięciu Skip -->
+    <div id="main-content" style="display: none;">
+        <h1>Witaj na naszej stronie!</h1>
+        <p>Treść strony głównej...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
